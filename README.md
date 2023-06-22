@@ -13,3 +13,7 @@ Funcionalidades esperadas dos botões:
 - -    : diminui em 5 minutos o tempo do timer.
 
 Cada card que se encontra do lado direito, quando selecionado, vai mudar de cor e emitir um som diferente
+
+# License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
