@@ -5,5 +5,12 @@
 }
 
 :root {
+    --bg: #FFFFFF;
+    --dark: #323238;
+    --blue: #02799D;
+    --gray: #E1E1E6; 
+}
 
+body {
+    background-color: var(--bg);
 }

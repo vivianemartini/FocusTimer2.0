@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>focus timer 2.0</title>
 </head>
 <body>
-    
+    <main>
+       <div class="clock">
+        <div id="timer">
+            <span class="minutes">25</span>
+            <span>:</span>
+            <span class="seconds">00</span>
+        </div>
+
+        <div id="controls">
+            <button class="play">
+                <img src="./assets/play.svg" alt="">
+            </button>
+            <button class="stop">
+                <img src="./assets/stop.svg" alt="">
+            </button>
+            <button class="more">
+                <img src="./assets/more.svg" alt="">
+            </button>
+            <button class="less">
+                <img src="./assets/less.svg" alt="">
+            </button>
+        </div>
+       </div>
+
+       <div class="elements">
+        <div class="btn-container">
+            <button><img src="./assets/tree.svg" alt=""></button>
+        </div>
+        <div class="btn-container">
+            <button><img src="./assets/rain.svg" alt=""></button>
+        </div>
+        <div class="btn-container">
+            <button><img src="./assets/coffeeshop.svg" alt=""></button>
+        </div>
+        <div class="btn-container">
+            <button><img src="./assets/fire.svg" alt=""></button>
+        </div>
+
+       </div>
+
+
+    </main>
+    <script src='./scripts/main.js'></script>
 </body>
 </html>
