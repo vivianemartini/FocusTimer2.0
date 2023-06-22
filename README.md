@@ -14,6 +14,14 @@ Funcionalidades esperadas dos botões:
 
 Cada card que se encontra do lado direito, quando selecionado, vai mudar de cor e emitir um som diferente
 
+# Melhorias
+
+Animações incluidas
+ - Zoom
+ - Shake
+
+Icons from FontAwesome
+
 # License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
