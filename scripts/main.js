@@ -4,21 +4,25 @@ const buttonMoreTime = document.querySelector('.more-time')
 const buttonLessTIme = document.querySelector('.less-time')
 let minutesDisplay = document.querySelector('.minutes')
 let secondsDisplay = document.querySelector('.seconds')
-let minutes
+let minutes = Number(minutesDisplay.textContent)
 let timerTimeOut
 
 function updateTimerDisplay(minutes, seconds){
   minutesDisplay.textContent = String(minutes).padStart(2, '0')
   secondsDisplay.textContent = String(seconds).padStart(2, '0')
-
 }
 
+function stopClock() {
+  clearTimeout(timerTimeOut)
+}
 
 function countdown(){
   timerTimeOut = setTimeout(function(){
     let seconds = Number(secondsDisplay.textContent)
     let minutes = Number(minutesDisplay.textContent)
   
+    updateTimerDisplay(minutes, 0)
+    
     if(minutes <= 0){
       return
     }
@@ -40,7 +44,7 @@ buttonPlay.addEventListener('click',function(){
 })
 
 buttonStop.addEventListener('click', function(){
-  clearTimeout(timerTimeOut)
+  stopClock()
 })
 
 
