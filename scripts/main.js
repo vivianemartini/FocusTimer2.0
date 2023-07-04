@@ -1,9 +1,9 @@
-import playMusic from './sounds'
+import './sounds.js'
 
 const buttonPlay = document.querySelector('.play')
 const buttonStop = document.querySelector('.stop')
 const buttonMoreTime = document.querySelector('.more-time')
-const buttonLessTIme = document.querySelector('.less-time')
+const buttonLessTime = document.querySelector('.less-time')
 let minutesDisplay = document.querySelector('.minutes')
 let secondsDisplay = document.querySelector('.seconds')
 let minutes = Number(minutesDisplay.textContent)
@@ -62,8 +62,6 @@ function removeFiveMinutes() {
   minutesDisplay.textContent = String(minutes).padStart(2, '0')
 }
 
-buttonLessTIme.addEventListener('click', function () {
+buttonLessTime.addEventListener('click', function () {
   removeFiveMinutes()
 })
-
-playMusic()
