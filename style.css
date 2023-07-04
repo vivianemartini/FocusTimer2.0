@@ -85,10 +85,6 @@ background: var(--gray);
   cursor: pointer;
 }
 
-.sound--active {
-    background: var(--blue) !important;
-}
-
 .sounds button i {
   font-size: 40px;
   color: var(--dark)
