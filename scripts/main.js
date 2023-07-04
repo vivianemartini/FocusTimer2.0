@@ -1,3 +1,5 @@
+import playMusic from './sounds'
+
 const buttonPlay = document.querySelector('.play')
 const buttonStop = document.querySelector('.stop')
 const buttonMoreTime = document.querySelector('.more-time')
@@ -64,68 +66,4 @@ buttonLessTIme.addEventListener('click', function () {
   removeFiveMinutes()
 })
 
-const buttonForest = document.getElementById('forest')
-const audioForest = new Audio('./sounds/Floresta.wav')
-const buttonRain = document.getElementById('rain')
-const audioRain = new Audio('./sounds/Chuva.wav')
-const buttonCoffee = document.getElementById('coffee')
-const audioCoffee = new Audio('./sounds/Cafeteria.wav')
-const buttonFire = document.getElementById('fire')
-const audioFire = new Audio('./sounds/Lareira.wav')
-let isPlaying = false
-
-buttonForest.addEventListener('click', function () {
-  if (isPlaying) {
-    // Stop the music
-    audioForest.pause()
-    isPlaying = false
-    buttonForest.style.backgroundColor = ''
-  } else {
-    // Play the music
-    audioForest.play()
-    isPlaying = true
-    buttonForest.style.backgroundColor = '#02799d'
-  }
-})
-
-buttonRain.addEventListener('click', function () {
-  if (isPlaying) {
-    // Stop the music
-    audioRain.pause()
-    isPlaying = false
-    buttonRain.style.backgroundColor = ''
-  } else {
-    // Play the music
-    audioRain.play()
-    isPlaying = true
-    buttonRain.style.backgroundColor = '#02799d'
-  }
-})
-
-buttonCoffee.addEventListener('click', function () {
-  if (isPlaying) {
-    // Stop the music
-    audioCoffee.pause()
-    isPlaying = false
-    buttonCoffee.style.backgroundColor = ''
-  } else {
-    // Play the music
-    audioCoffee.play()
-    isPlaying = true
-    buttonCoffee.style.backgroundColor = '#02799d'
-  }
-})
-
-buttonFire.addEventListener('click', function () {
-  if (isPlaying) {
-    // Stop the music
-    audioFire.pause()
-    isPlaying = false
-    buttonFire.style.backgroundColor = ''
-  } else {
-    // Play the music
-    audioFire.play()
-    isPlaying = true
-    buttonFire.style.backgroundColor = '#02799d'
-  }
-})
+playMusic()
